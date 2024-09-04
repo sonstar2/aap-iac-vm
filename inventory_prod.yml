@@ -8,24 +8,24 @@ all:
         connection: local
     automationcontroller:
       hosts:
-        ec2-43-201-69-206.ap-northeast-2.compute.amazonaws.com: # FQDN of Automation Controller host(s)
+        ip-172-31-4-21.ap-northeast-2.compute.internal: # FQDN of Automation Controller host(s)
 
     automationhub:
       hosts:
-        ec2-43-203-200-172.ap-northeast-2.compute.amazonaws.com: # FQDN of Automation Hub host(s). Can be commented out if not in use.
+        ip-172-31-7-208.ap-northeast-2.compute.internal: # FQDN of Automation Hub host(s). Can be commented out if not in use.
 
     automationedacontroller:
       hosts:
-        ec2-3-35-231-241.ap-northeast-2.compute.amazonaws.com: # FQDN of Automation EDA Controller host(s)
+        ip-172-31-9-11.ap-northeast-2.compute.internal: # FQDN of Automation EDA Controller host(s)
 
     builder:
       hosts:
-        ec2-43-203-200-172.ap-northeast-2.compute.amazonaws.com: # FQDN of builder host if you have one. Otherwise, can be Automation Hub host or commented out if not in use.
+        eip-172-31-7-208.ap-northeast-2.compute.internal: # FQDN of builder host if you have one. Otherwise, can be Automation Hub host or commented out if not in use.
 
     # Only needed if installing AAP with automation, can be removed if you are not. See Install docs if unsure what server should be the database host.
     database:
       hosts:
-        ec2-43-202-47-72.ap-northeast-2.compute.amazonaws.com:
+        ip-172-31-9-9.ap-northeast-2.compute.internal:
   vars:
     env: prod
     ansible_user: ec2-user
