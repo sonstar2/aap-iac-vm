@@ -20,7 +20,7 @@ all:
 
     builder:
       hosts:
-        eip-172-31-7-208.ap-northeast-2.compute.internal: # FQDN of builder host if you have one. Otherwise, can be Automation Hub host or commented out if not in use.
+        ip-172-31-7-208.ap-northeast-2.compute.internal: # FQDN of builder host if you have one. Otherwise, can be Automation Hub host or commented out if not in use.
 
     # Only needed if installing AAP with automation, can be removed if you are not. See Install docs if unsure what server should be the database host.
     database:
